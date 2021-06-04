@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>add style</title>
+	<style>
+	.pera_style{
+	color:red;
+	font-size:30px;
+	}
+	</style>
+  </head>
+  <body>
+    
+	<p class="peraid">This Is My Paragraph</p>
+	<button onclick="addStyle()">Add Style</button>
+	<button onclick="removeStyle()">Remove Style</button>
+  
+  <script type="text/javascript">
+    
+	function addStyle(){
+	var my_var=document.querySelector(".peraid");
+	my_var.classList.add("pera_style");
+	}
+	
+	function removeStyle(){
+	var my_var=document.querySelector(".peraid");
+	my_var.classList.remove("pera_style");
+	}
+	
+  </script>
+  </body>
+</html>

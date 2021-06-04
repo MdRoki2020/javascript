@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>add style</title>
+	<style>
+	.pera_style{
+	color:red;
+	font-size:30px;
+	}
+	</style>
+  </head>
+  <body>
+    
+	<p class="peraid">This Is My Paragraph</p>
+
+  
+  <script type="text/javascript">
+
+	var my_var=document.querySelector(".peraid");
+	my_var.addEventListener("mouseover",addStyle);
+	function addStyle(){
+	my_var.classList.add("pera_style");
+	}
+	
+	
+	my_var.addEventListener("mouseout",removeStyle);
+	function removeStyle(){
+	my_var.classList.remove("pera_style");
+	}
+
+	
+	
+  </script>
+  </body>
+</html>

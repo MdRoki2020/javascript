@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>image slider</title>
+  </head>
+  <body>
+    
+	<button onclick="prev()">previous</button>
+	<img src="roki1.jpg" width="300px"/>
+	<button onclick="next()">next</button>
+	
+  
+  <script type="text/javascript">
+    var my_var=document.querySelector("img");
+    var photos=["roki1.jpg","roki2.jpg","roki3.jpg"];
+	var count=0;
+	
+	function next(){
+	count++;
+	if(count>=photos.length){
+	count=0;
+	my_var.src=photos[count];
+	}
+	else{
+	my_var.src=photos[count];
+	}
+	}
+	
+	
+	
+	function prev(){
+	
+	count--;
+	if(count<0){
+	count=photos.length-1;
+	my_var.src=photos[count];
+	}
+	else{
+	my_var.src=photos[count];
+	}
+	}
+    
+	
+	
+  </script>
+  </body>
+</html>
